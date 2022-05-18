@@ -1,11 +1,12 @@
-
-
 class Menu:
-    """fill in class definition here"""
+  def __init__(self,name,quantity):
+    self.name=name
+    self.quantity=quantity
 
 
-m = Menu()  # Menu is a class
-m.add("idly", 10)
-m.add("vada". 20)
+m1 = Menu("idly",10)
+m2=Menu("vada",20)
+x=[m1,m2]
 
-m.show()
+for i in x:
+    print(i.name,i.quantity)
