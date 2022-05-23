@@ -2,8 +2,12 @@ l=[]
 t=int(input())
 for i in range(t):
     hcf=1
-    n=input()
+    n=int(input())
     x=list(map(int,input().split()))
+    if len(x)>n:
+        print("input limit exceded")
+        break
+
     sum_num=1
     sum_den=x[0]
     print(f"1/{x[0]} ",end="")
